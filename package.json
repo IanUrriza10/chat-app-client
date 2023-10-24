@@ -30,9 +30,9 @@
     "typescript": "^5"
   },
   "lint-staged": {
-    "src/*.{js,ts,jsx,tsx}": [
+    "src/**/*.{js,ts,jsx,tsx}": [
       "prettier --write",
-      "yarn lint"
+      "eslint"
     ]
   }
 }

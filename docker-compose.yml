@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 services:
   frontend:
     container_name: chat-client
@@ -8,10 +8,6 @@ services:
       NODE_ENV: development
     ports:
       - 3000:3000
-    volumes:
-      - ./:/app
-      - ./node_modules:/app/node_modules
-      - ./.next:/app/.next
     networks:
       - chat-network
 networks:
